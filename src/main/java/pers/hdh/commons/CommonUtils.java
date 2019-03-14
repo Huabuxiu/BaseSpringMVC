@@ -59,5 +59,31 @@ public class CommonUtils {
         return null;
     }
 
+    /**
+    * @Description: 将限定名转换为路径 如 pers.hdh -> pers/hdh
+    * @Param: 全限定命
+    * @return: 路径
+    * @Author: Huabuxiu
+    * @Date: 2019/3/13
+    */
+    public static String transferQualifiedToPath(String qualifiedName) throws Exception {
+        if (qualifiedName == null) {
+            throw new Exception("空串不可转换");
+        }
+        return qualifiedName.replaceAll("\\.", "/");
+    }
 
+
+    /**
+    * @Description: 转换第一个字母为小写
+    * @Param:
+    * @return:
+    * @Author: Huabuxiu
+    * @Date: 2019/3/14
+    */
+    public static String toLowerFirstWord(String simpleName) {
+        char[] charArray = simpleName.toCharArray();
+        charArray[0] += 32;
+        return String.copyValueOf(charArray);
+    }
 }
