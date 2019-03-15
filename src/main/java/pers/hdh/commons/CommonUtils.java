@@ -86,4 +86,8 @@ public class CommonUtils {
         charArray[0] += 32;
         return String.copyValueOf(charArray);
     }
+
+    public static void main(String[] args) throws Exception{
+        System.out.println(getBasePackName("dh-springmvc.xml"));
+    }
 }
