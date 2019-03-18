@@ -27,11 +27,11 @@ public class TestController {
 //    @DhQualifier("testService")
 //    private TestService testService;
 //
-//    @DhQualifier("testService2Impl")
-//    private TestService2 testService2;
+    @DhQualifier("testService2Impl")
+    private TestService2 testService2;
 
     private TestService testService = new TestServiceImpl();
-    private TestService2 testService2 = new TestService2Impl();
+//    private TestService2 testService2 = new TestService2Impl();
 
 
 
